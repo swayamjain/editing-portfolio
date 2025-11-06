@@ -28,9 +28,7 @@ import {
 // import Grid from '@mui/material/Unstable_Grid2'; // Import Grid v2
 import Grid from '@mui/material/GridLegacy'; // Import Grid v2 (Corrected Path)
 import {
-  LinkedIn,
-  Instagram,
-  X as XIcon, // X/Twitter icon
+  Instagram
 } from '@mui/icons-material';
 
 // --- MOCK DATA ---
@@ -38,7 +36,7 @@ import {
 const mockProjects = [
   {
     id: 1,
-    title: 'Cyberflow',
+    title: 'Ghost',
     category: 'video',
     posterUrl: 'https://cdn.jsdelivr.net/gh/swayamjain/folio_videos/assets/thumbnails/phantomtext.jpg',
     hoverUrl: 'https://cdn.jsdelivr.net/gh/swayamjain/folio_videos/assets/videos/phantomtextdraft003-web.mp4',
@@ -46,42 +44,42 @@ const mockProjects = [
   },
   {
     id: 2,
-    title: 'Aura', // Changed back from Google Post
-    category: 'design',
-    posterUrl: 'https://placehold.co/900x1600/111111/F8F8F8?text=Aura\\n(Poster)',
-    hoverUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
-    aspectRatio: '4/5',
+    title: 'Jack of all Trades', // Changed back from Google Post
+    category: 'video',
+    posterUrl: 'https://cdn.jsdelivr.net/gh/swayamjain/folio_videos/assets/thumbnails/adayinlife.jpg',
+    hoverUrl: 'https://cdn.jsdelivr.net/gh/swayamjain/folio_videos/assets/videos/jackofalltrades001-web.mp4',
+    aspectRatio: '16/9',
   },
   {
     id: 3,
-    title: 'Ethereal',
+    title: 'NOISE',
     category: 'video',
-    posterUrl: 'https://placehold.co/900x1600/111111/F8F8F8?text=Ethereal\\n(Poster)',
-    hoverUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
+    posterUrl: 'https://cdn.jsdelivr.net/gh/swayamjain/folio_videos/assets/thumbnails/noise.jpg',
+    hoverUrl: 'https://cdn.jsdelivr.net/gh/swayamjain/folio_videos/assets/videos/duplicates001-web.mp4',
     aspectRatio: '16/9',
   },
   {
     id: 4,
-    title: 'Quantum',
-    category: 'design',
-    posterUrl: 'https://placehold.co/900x1600/111111/F8F8F8?text=Quantum\\n(Poster)',
-    hoverUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4',
-    aspectRatio: '16/9',
+    title: 'A day in Life',
+    category: 'video',
+    posterUrl: 'https://cdn.jsdelivr.net/gh/swayamjain/folio_videos/assets/thumbnails/adayinlife.jpg',
+    hoverUrl: 'https://cdn.jsdelivr.net/gh/swayamjain/folio_videos/assets/videos/finallyaday-in-life-web.mp4',
+    aspectRatio: '9/16',
   },
   {
     id: 5,
-    title: 'Momentum',
-    category: 'video',
-    posterUrl: 'https://placehold.co/900x1600/111111/F8F8F8?text=Momentum\\n(Poster)',
-    hoverUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4',
+    title: 'The Youth Project',
+    category: 'design',
+    posterUrl: 'https://cdn.jsdelivr.net/gh/swayamjain/folio_videos/assets/thumbnails/BlackBackground_TheYouthProjectLogo003_FULLSIZE_inJPEG.jpg',
+    hoverUrl: 'https://cdn.jsdelivr.net/gh/swayamjain/folio_videos/assets/videos/theyouthproject-web.mp4',
     aspectRatio: '16/9',
   },
   {
     id: 6,
-    title: 'Nova',
+    title: 'Upcoming',
     category: 'video',
-    posterUrl: 'https://placehold.co/900x1600/111111/F8F8F8?text=Nova\\n(Poster)',
-    hoverUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4',
+    posterUrl: 'https://placehold.co/900x1600/111111/F8F8F8?text=Could be \\nYours',
+    hoverUrl: 'null',
     aspectRatio: '16/9',
   },
 ];
@@ -172,7 +170,7 @@ function Header() {
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           <Typography variant="h6" sx={{ fontWeight: 700, letterSpacing: '0.5px' }}>
-            Your Name
+            Swayam Jain
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
@@ -748,7 +746,7 @@ function PortfolioPage({ projects }: { projects: Project[] }) {
               About Me
             </Typography>
             <Typography variant="h6" color="text.secondary" sx={{ textAlign: 'center', mb: 4 }}>
-              I'm a passionate video editor and motion designer with over 5 years of experience, turning raw footage into compelling cinematic narratives.
+              I'm a passionate video editor and motion designer, turning raw footage into compelling cinematic narratives.
             </Typography>
             <Typography variant="body1" color="text.secondary" sx={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto', mb: 5 }}>
               My expertise lies in crafting stories that not only look beautiful but also resonate deeply with audiences. Whether it's a high-energy commercial, a corporate brand story, or a complex motion graphics piece, I bring a meticulous eye for detail and a deep understanding of pacing, rhythm, and sound design to every project.
@@ -803,7 +801,7 @@ function PortfolioPage({ projects }: { projects: Project[] }) {
               Let's create something.
             </Typography>
             <Link
-              href="mailto:hello@yourname.com"
+              href="mailto:jswayam234@gmail.com"
               variant="h5"
               color="primary"
               sx={{
@@ -828,17 +826,11 @@ function PortfolioPage({ projects }: { projects: Project[] }) {
                 },
               }}
             >
-              hello@yourname.com
+              jswayam234@gmail.com
             </Link>
             <Box sx={{ mt: 4, display: 'flex', justifyContent: 'center', gap: 2 }}>
-              <IconButton href="https://linkedin.com" target="_blank" color="primary">
-                <LinkedIn />
-              </IconButton>
-              <IconButton href="https://instagram.com" target="_blank" color="primary">
+              <IconButton href="https://instagram.com/sw4y4mj4in" target="_blank" color="primary">
                 <Instagram />
-              </IconButton>
-              <IconButton href="https://x.com" target="_blank" color="primary">
-                <XIcon />
               </IconButton>
             </Box>
             {/* Admin Toggle Button REMOVED */}
