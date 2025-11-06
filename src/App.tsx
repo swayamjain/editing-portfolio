@@ -40,8 +40,8 @@ const mockProjects = [
     id: 1,
     title: 'Cyberflow',
     category: 'video',
-    posterUrl: 'https://placehold.co/900x1600/111111/F8F8F8?text=Cyberflow\\n(Poster)',
-    hoverUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+    posterUrl: 'https://cdn.jsdelivr.net/gh/swayamjain/folio_videos/assets/thumbnails/phantomtext.jpg',
+    hoverUrl: 'https://cdn.jsdelivr.net/gh/swayamjain/folio_videos/assets/videos/phantomtextdraft003-web.mp4',
     aspectRatio: '9/16',
   },
   {
